@@ -1,0 +1,181 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Dashboard Audit Internal – PT. Borneo Group Indonesia</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f3f5f7;--sf:#fff;--tx:#17212b;--mu:#617080;--bd:#dbe1e7;--pr:#0d5c63;--gn:#16794a;--gb:#d9f1e4;--yl:#855500;--yb:#ffefbf;--rd:#b3261e;--rb:#fbdedb;--bl:#1f5f9c;--bb:#dde9f6;color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e1419;--sf:#172029;--tx:#e5ebf0;--mu:#93a1af;--bd:#293644;--pr:#4fb3bb;--gn:#4cc28a;--gb:#12382a;--yl:#f0c35a;--yb:#3b3110;--rd:#f28b82;--rb:#42191a;--bl:#7fb5ee;--bb:#16304a;color-scheme:dark}}
+:root[data-theme=dark]{--bg:#0e1419;--sf:#172029;--tx:#e5ebf0;--mu:#93a1af;--bd:#293644;--pr:#4fb3bb;--gn:#4cc28a;--gb:#12382a;--yl:#f0c35a;--yb:#3b3110;--rd:#f28b82;--rb:#42191a;--bl:#7fb5ee;--bb:#16304a;color-scheme:dark}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:#0f3a40;z-index:10}
+header{background:#0f3a40;color:#fff;padding:10px 16px 0;position:sticky;top:env(safe-area-inset-top,0px);z-index:11}
+h1{font-size:17px;margin:0}header small{opacity:.75}
+#nav{display:flex;gap:2px;overflow-x:auto;margin-top:8px}
+#nav button{background:none;border:0;color:#cfe3e5;padding:9px 13px;cursor:pointer;font:inherit;border-bottom:3px solid transparent;white-space:nowrap}
+#nav button.on{color:#fff;border-color:#6fd3da;font-weight:600}
+main{padding:16px;max-width:1280px;margin:auto}
+h2{font-size:16px;margin:18px 0 8px}h3{font-size:14px;margin:0 0 8px}
+.gr{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(145px,1fr))}
+.g2{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));margin-top:12px}
+.cd{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:14px}
+.k small{color:var(--mu);display:block}.k b{font-size:26px;line-height:1.2}.k.g b{color:var(--gn)}.k.r b{color:var(--rd)}.k.y b{color:var(--yl)}
+.k{border-left:4px solid var(--bd)}.k.g{border-left-color:var(--gn)}.k.r{border-left-color:var(--rd)}.k.y{border-left-color:#e0a100}
+.bar{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px;align-items:center}
+button,select,input,textarea{font:inherit;color:var(--tx)}
+.bar button,dialog button,.btn{background:var(--sf);border:1px solid var(--bd);border-radius:6px;padding:6px 12px;cursor:pointer}
+.bar button.on,button.p{background:var(--pr);border-color:var(--pr);color:#fff}
+@media(prefers-color-scheme:dark){.bar button.on,button.p{color:#06262a}}
+.w{overflow-x:auto;background:var(--sf);border:1px solid var(--bd);border-radius:8px}
+table{border-collapse:collapse;width:100%}th,td{padding:8px 10px;border-bottom:1px solid var(--bd);text-align:left;white-space:nowrap;font-size:13px;vertical-align:middle}
+th{background:var(--bg);color:var(--mu);font-weight:600}tr:last-child td{border:0}
+.tx{max-width:250px;overflow:hidden;text-overflow:ellipsis}
+td select,td button{font-size:12px;padding:3px 6px;background:var(--sf);border:1px solid var(--bd);border-radius:5px}
+.b{display:inline-block;padding:1px 9px;border-radius:99px;font-size:12px;font-weight:600}
+.b.g{background:var(--gb);color:var(--gn)}.b.y{background:var(--yb);color:var(--yl)}.b.r{background:var(--rb);color:var(--rd)}.b.i{background:var(--bb);color:var(--bl)}.b.n{background:var(--bg);color:var(--mu);border:1px solid var(--bd)}
+.pb{display:inline-block;width:70px;height:8px;background:var(--bd);border-radius:4px;vertical-align:middle}.pb i{display:block;height:100%;background:var(--gn);border-radius:4px}
+.sr{display:grid;grid-template-columns:84px 1fr 28px;gap:8px;align-items:center;margin:7px 0}
+.sb{display:flex;height:22px;border-radius:5px;overflow:hidden;background:var(--bd)}.sb i{color:#fff;font:600 11px/22px system-ui;text-align:center}
+.lg{display:flex;gap:10px;flex-wrap:wrap;font-size:12px;color:var(--mu);margin-top:8px}.lg s{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;text-decoration:none}
+ul.l{list-style:none;margin:0;padding:0}ul.l li{display:flex;gap:8px;align-items:center;padding:7px 0;border-bottom:1px solid var(--bd);flex-wrap:wrap}ul.l li:last-child{border:0}
+.mu{color:var(--mu)}.po{display:none}
+dialog{border:1px solid var(--bd);border-radius:10px;background:var(--sf);color:var(--tx);width:min(680px,94vw);padding:16px}
+#ff{display:grid;grid-template-columns:1fr 1fr;gap:10px}#ff label{display:flex;flex-direction:column;font-size:12px;color:var(--mu);gap:3px}#ff .w2{grid-column:1/-1}
+#ff input,#ff select,#ff textarea{padding:6px 8px;border:1px solid var(--bd);border-radius:6px;background:var(--bg)}
+@media(max-width:520px){#ff{grid-template-columns:1fr}}
+.doc li{margin:3px 0}
+@media print{header,body::before,.bar,.np{display:none!important}.po{display:block}main{padding:0}.w{overflow:visible}body{background:#fff}}
+a{color:var(--bl)}
+.ch{display:block;margin-top:2px;padding:0 5px;border-radius:4px;font-weight:500;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:11px}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}.cal>div{background:var(--sf);border:1px solid var(--bd);border-radius:6px;min-height:84px;padding:4px;font-size:11px;overflow:hidden}
+.cal>.hd{min-height:0;text-align:center;color:var(--mu);font-weight:600;background:none;border:0}.cal>.td{border:2px solid var(--pr)}.cal>.e{background:none;border:0}
+@media(max-width:520px){.cal>div{min-height:48px;padding:2px}.ch{font-size:0;height:6px;padding:0}}
+</style><script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script></head><body>
+<header><h1 style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">Dashboard Audit Internal <small>· PT. Borneo Group Indonesia</small><span id="sy" style="font-size:11px;opacity:.85;margin-left:auto"></span><select id="au" title="Tampilan per auditor" style="font-size:12px;padding:3px 6px;border-radius:5px;color:#fff;background:#164c53;border:1px solid #3d7f86"></select></h1><nav id="nav"></nav></header>
+<main id="m"></main>
+<dialog id="dg"><form method="dialog" id="fm"><h2 style="margin-top:0"></h2><div id="ff"></div><div class="bar" style="margin:14px 0 0"><button class="p" type="submit">Simpan</button><button type="button" data-x="1">Batal</button><button type="button" data-del="1" id="del">Hapus</button></div></form></dialog>
+<script>
+const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"]/g,c=>'&#'+c.charCodeAt(0)+';');
+const iso=d=>new Date(d.getTime()-d.getTimezoneOffset()*6e4).toISOString().slice(0,10),TD=iso(new Date()),dt=s=>new Date(s+'T00:00'),
+add=(s,n)=>{const d=dt(s);d.setDate(d.getDate()+n);return iso(d)},addM=(s,n)=>{const d=dt(s);d.setMonth(d.getMonth()+n);return iso(d)},
+df=(a,b)=>Math.round((dt(a)-dt(b))/864e5),fd=s=>s?s.split('-').reverse().join('/'):'-';
+const K=['Keuangan','Operasional','Logistik','Kepatuhan'],FR=['Harian','Mingguan','Bulanan'],PR=['Tinggi','Sedang','Rendah'],TS=['Belum','Proses','Selesai'],
+FS=['Baru','Dalam Tindak Lanjut','Menunggu Verifikasi','Selesai','Ditutup'],VF=['Belum diverifikasi','Sesuai','Tidak sesuai'],
+BL=['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
+const SC={
+tasks:{n:'Tugas',p:'T',f:[['id','ID tugas'],['nama','Nama tugas'],['kat','Kategori','s',K],['pic','PIC / auditor','s',()=>S.team.map(x=>x.n)],['frek','Frekuensi','s',FR],['mulai','Tanggal mulai','date'],['due','Tenggat','date'],['status','Status','s',TS],['prio','Prioritas','s',PR],['cat','Catatan','a'],['bukti','Bukti/lampiran']]},
+findings:{n:'Temuan',p:'F',f:[['id','ID temuan'],['tgl','Tanggal temuan','date'],['unit','Unit/area diaudit','s',K],['uraian','Uraian temuan','a'],['kriteria','Kriteria','a'],['sebab','Penyebab','a'],['dampak','Dampak','a'],['risiko','Tingkat risiko','s',PR],['rek','Rekomendasi','a'],['auditee','Auditee/penanggung jawab'],['aud','Auditor penanggung jawab','s',()=>S.team.map(x=>x.n)],['due','Tenggat tindak lanjut','date'],['status','Status','s',FS]]},
+team:{n:'Auditor',p:'AU',f:[['id','ID'],['n','Nama auditor'],['wa','Nomor WhatsApp (628…)'],['on','Notifikasi','s',['Aktif','Nonaktif']]]},
+actions:{n:'Tindak Lanjut',p:'TL',f:[['id','ID tindak lanjut'],['fid','ID temuan','s',()=>S.findings.map(x=>x.id)],['rencana','Rencana aksi','a'],['pic','PIC'],['pw','WhatsApp PIC (628…)'],['due','Tenggat','date'],['prog','Progres (%)','num'],['selesai','Tanggal selesai','date'],['bukti','Bukti penyelesaian'],['verif','Hasil verifikasi auditor','s',VF]]}};
+const CL={sisa:'Sisa hari',umur:'Umur temuan (hari)',fl:'Penanda',st:'Status',beban:'Beban kerja',kirim:'Pengingat'},fdef=(e,k)=>SC[e].f.find(x=>x[0]==k)||[k,CL[k]];
+const rc={Tinggi:'r',Sedang:'y',Rendah:'g'},st={Belum:'n',Proses:'i',Selesai:'g',Terlambat:'r',Baru:'n','Dalam Tindak Lanjut':'i','Menunggu Verifikasi':'y',Ditutup:'g'},
+col={Belum:'#8b97a5',Baru:'#8b97a5',Proses:'#2f7bc0','Dalam Tindak Lanjut':'#2f7bc0','Menunggu Verifikasi':'#d99a00',Selesai:'#1b9a5c',Ditutup:'#0d6b73',Terlambat:'#d92d20'};
+const bd=(c,x)=>`<span class="b ${c}">${esc(x)}</span>`,fl=d=>d<0?'r':d<=3?'y':'g',
+fb=due=>{const d=df(due,TD);return bd(fl(d),d<0?`Terlambat ${-d} hari`:d==0?'Jatuh tempo hari ini':d<=3?`H-${d}`:'Sesuai jadwal')},
+eff=t=>t.status!='Selesai'&&t.due<TD?'Terlambat':t.status,aSt=a=>+a.prog>=100?'Selesai':a.due<TD?'Terlambat':+a.prog>0?'Proses':'Belum',open=f=>!['Selesai','Ditutup'].includes(f.status);
+let S,tab='ov',ft='Semua',cur=null,mo=TD.slice(0,7);
+function seed(){const o=n=>add(TD,n),
+t=(id,nama,kat,frek,due,status,prio,cat)=>({id,nama,kat,pic:'Auditor Internal',frek,mulai:frek=='Bulanan'?addM(due,-1):add(due,frek=='Harian'?-1:-7),due,status,prio,cat,bukti:''}),
+f=(id,tgl,unit,uraian,kriteria,sebab,dampak,risiko,rek,auditee,due,status,tutup='')=>({id,tgl,unit,uraian,kriteria,sebab,dampak,risiko,rek,auditee,due,status,tutup,aud:'Auditor Internal'}),
+a=(id,fid,rencana,pic,due,prog,verif='Belum diverifikasi',bukti='')=>({id,fid,rencana,pic,pw:'',due,prog,selesai:prog==100?due:'',bukti,verif});
+const d={tasks:[t('T-001','Verifikasi transaksi kas dan bank harian','Keuangan','Harian',o(0),'Proses','Tinggi','Sampel 25 transaksi'),t('T-002','Pemeriksaan surat jalan dan mutasi stok','Logistik','Harian',o(0),'Belum','Sedang',''),t('T-003','Review log insiden operasional','Operasional','Harian',o(-1),'Belum','Sedang',''),
+t('T-004','Rekonsiliasi bank dan buku besar','Keuangan','Mingguan',o(2),'Proses','Tinggi',''),t('T-005','Review dokumen perizinan dan kontrak','Kepatuhan','Mingguan',o(5),'Selesai','Sedang',''),t('T-006','Uji petik stok opname gudang','Logistik','Mingguan',o(-2),'Proses','Tinggi','Gudang BBM'),
+t('T-007','Penyusunan laporan hasil audit bulanan','Keuangan','Bulanan',o(12),'Belum','Tinggi',''),t('T-008','Evaluasi kepatuhan regulasi dan SOP','Kepatuhan','Bulanan',o(3),'Proses','Sedang',''),t('T-009','Reviu efisiensi biaya operasional','Operasional','Bulanan',o(20),'Belum','Rendah','')],
+findings:[f('F-001',o(-45),'Keuangan','Pembayaran vendor tanpa dokumen pendukung lengkap','Kebijakan pembayaran: wajib ada PO, BAST, faktur','Checklist dokumen belum diterapkan','Risiko pembayaran fiktif','Tinggi','Lengkapi dokumen dan terapkan checklist','Kepala Keuangan',o(-5),'Dalam Tindak Lanjut'),
+f('F-002',o(-30),'Logistik','Selisih stok BBM gudang terhadap catatan','SOP persediaan: selisih maksimal 0,5%','Pencatatan keluar-masuk tidak harian','Potensi kerugian persediaan','Tinggi','Hitung ulang stok dan pasang pencatatan harian','Manajer Gudang',o(2),'Dalam Tindak Lanjut'),
+f('F-003',o(-20),'Kepatuhan','Izin operasional alat berat kedaluwarsa','Peraturan K3 dan izin operasi','Tidak ada pengingat masa berlaku','Sanksi regulator dan henti operasi','Tinggi','Ajukan perpanjangan izin dan buat pengingat','Manajer HSE',o(10),'Baru'),
+f('F-004',o(-60),'Operasional','SOP perawatan armada belum diperbarui','Kebijakan pengendalian dokumen','Revisi tidak dijadwalkan','Perawatan tidak seragam','Sedang','Revisi dan sosialisasikan SOP','Manajer Operasional',o(-10),'Menunggu Verifikasi'),
+f('F-005',o(-15),'Keuangan','Uang muka dinas belum dipertanggungjawabkan','Kebijakan uang muka: maks. 14 hari','Tidak ada pemantauan umur uang muka','Saldo piutang karyawan membengkak','Sedang','Selesaikan pertanggungjawaban uang muka','Staf Akuntansi',o(14),'Dalam Tindak Lanjut'),
+f('F-006',o(-90),'Logistik','Barang keluar tanpa otorisasi tertulis','Prosedur pengeluaran barang','Formulir tidak diwajibkan','Risiko kehilangan barang','Rendah','Wajibkan formulir keluar barang','Supervisor Gudang',o(-60),'Ditutup',o(-55)),
+f('F-007',o(-40),'Kepatuhan','Laporan pajak masa terlambat disampaikan','Ketentuan perpajakan','Kalender pajak tidak dipantau','Denda administrasi','Sedang','Susun kalender kepatuhan pajak','Kepala Pajak',o(-10),'Selesai',o(-3))],
+actions:[a('TL-001','F-001','Melengkapi dokumen pendukung 12 pembayaran','Kepala Keuangan',o(-5),60),a('TL-002','F-001','Menerapkan checklist dokumen sebelum pembayaran','Staf Keuangan',o(7),20),a('TL-003','F-002','Penghitungan ulang stok fisik BBM','Manajer Gudang',o(1),80),a('TL-004','F-002','Pencatatan flowmeter harian','Supervisor Gudang',o(2),30),
+a('TL-005','F-003','Pengajuan perpanjangan izin alat berat','Manajer HSE',o(10),0),a('TL-006','F-004','Revisi dan sosialisasi SOP perawatan','Manajer Operasional',o(-10),100),a('TL-007','F-005','Pertanggungjawaban uang muka','Staf Akuntansi',o(14),40),
+a('TL-008','F-006','Formulir otorisasi keluar barang','Supervisor Gudang',o(-60),100,'Sesuai','Formulir terbit'),a('TL-009','F-007','Pelaporan pajak dan kalender kepatuhan','Kepala Pajak',o(-10),100,'Sesuai','Bukti lapor')],
+logs:[{t:o(-3)+' 09:10',a:'TL-001',x:'Progres 30% → 60%'},{t:o(-1)+' 14:25',a:'TL-003',x:'Progres 50% → 80%'},{t:o(-10)+' 10:00',a:'TL-006',x:'Progres 70% → 100%'}],hist:[{i:'T-005',f:'Mingguan',d:TD}],team:[{id:'AU-001',n:'Auditor Internal',wa:'',on:'Aktif'}]},dm=+TD.slice(8);
+d.tasks.forEach((x,j)=>{if(x.frek=='Harian')for(let k=1;k<dm;k++)(k+j)%6&&d.hist.push({i:x.id,f:'Harian',d:add(TD,-k)});if(x.frek=='Mingguan')for(let k=7;k<dm;k+=7)d.hist.push({i:x.id,f:'Mingguan',d:add(TD,-k)})});return d}
+function roll(){S.tasks.forEach(t=>{if(t.status=='Selesai'&&t.due<TD){t.mulai=t.due;while(t.due<TD)t.due=t.frek=='Bulanan'?addM(t.due,1):add(t.due,t.frek=='Harian'?1:7);t.status='Belum'}})}
+const GS=window.google&&google.script&&google.script.run;let au='',cm=TD.slice(0,7),wt;
+function sm(x){const e=$('#sy');if(e){e.textContent=x;setTimeout(()=>e.textContent='',3500)}}
+function sv(){try{localStorage.setItem('aud1',JSON.stringify(S))}catch(e){}if(GS&&S){clearTimeout(wt);wt=setTimeout(()=>GS.withSuccessHandler(()=>sm('Tersimpan di Google Sheets')).withFailureHandler(()=>sm('Gagal menyimpan ke Sheets')).apiSave(JSON.stringify(S)),700)}}
+function mig(){S.team=S.team&&S.team.length?S.team:[{id:'AU-001',n:'Auditor Internal',wa:'',on:'Aktif'}];S.logs=S.logs||[];S.hist=S.hist||[];S.findings.forEach(f=>f.aud=f.aud||S.team[0].n);S.actions.forEach(a=>a.pw=a.pw||'')}
+function ready(){if(!S||!S.tasks)S=seed();mig();roll();sv()}
+try{S=GS?null:JSON.parse(localStorage.getItem('aud1'))}catch(e){}if(!GS)ready();
+const lg=(a,x)=>S.logs.push({t:TD+' '+new Date().toTimeString().slice(0,5),a,x}),
+fc=f=>{f.tutup=open(f)?'':(f.tutup||TD)},
+ts=(r,o)=>{if(r.status=='Selesai'&&(!o||o.status!='Selesai'))S.hist.push({i:r.id,f:r.frek,d:TD});if(o&&o.status=='Selesai'&&r.status!='Selesai')S.hist=S.hist.filter(h=>!(h.i==r.id&&h.d==TD))},
+nid=e=>SC[e].p+'-'+String(Math.max(0,...S[e].map(x=>+x.id.split('-').pop()))+1).padStart(3,'0');
+function sy(id){const f=S.findings.find(x=>x.id==id),a=S.actions.filter(x=>x.fid==id);if(!f||!a.length||f.status=='Ditutup')return;const all=a.every(x=>+x.prog>=100),any=a.some(x=>+x.prog>0);
+f.status=all?(a.every(x=>x.verif=='Sesuai')?'Selesai':'Menunggu Verifikasi'):(any||f.status!='Baru')?'Dalam Tindak Lanjut':'Baru';fc(f)}
+function V(){if(!au)return S;const F=S.findings.filter(f=>f.aud==au),id=F.map(f=>f.id),T=S.tasks.filter(t=>t.pic==au);return{...S,tasks:T,findings:F,actions:S.actions.filter(a=>id.includes(a.fid)),hist:S.hist.filter(h=>T.some(t=>t.id==h.i))}}
+function al(){const S=V(),r=[];S.tasks.forEach(t=>{if(t.status!='Selesai')r.push({k:'Tugas',id:t.id,x:t.nama,due:t.due,w:t.pic})});S.actions.forEach(a=>{if(+a.prog<100)r.push({k:'Tindak lanjut',id:a.id,x:a.rencana+' ('+a.fid+')',due:a.due,w:a.pic})});S.findings.forEach(f=>{if(open(f))r.push({k:'Temuan',id:f.id,x:f.uraian,due:f.due,w:f.auditee})});return r.map(x=>({...x,d:df(x.due,TD)})).sort((a,b)=>a.d-b.d)}
+function cell(e,r,k){const v=r[k],f=fdef(e,k);
+if(k=='status')return `<select data-s="${e}|${r.id}|status">${(e=='tasks'?TS:FS).map(s=>`<option ${s==v?'selected':''}>${s}</option>`).join('')}</select>`+(e=='tasks'&&eff(r)=='Terlambat'?' '+bd('r','Terlambat'):'');
+if(k=='st'){const s=aSt(r);return bd(st[s],s)}
+if(k=='beban')return S.tasks.filter(t=>t.pic==r.n&&t.status!='Selesai').length+' tugas, '+S.findings.filter(f=>f.aud==r.n&&open(f)).length+' temuan terbuka';
+if(k=='kirim'){const w=String(r.pw||'').replace(/\D/g,'');return w&&+r.prog<100?`<a href="https://wa.me/${w}?text=${encodeURIComponent(`Yth. ${r.pic}, mohon tindak lanjut ${r.id} (${r.rencana}) tenggat ${fd(r.due)}, progres ${+r.prog}%. Terima kasih. – Audit Internal PT. Borneo Group Indonesia`)}" target="_blank" rel="noopener">Kirim WA</a>`:'-'}
+if(k=='bukti'&&/^https?:|^\/_blob/.test(v))return `<a href="${esc(v)}" target="_blank" rel="noopener">Lihat bukti</a>`;
+if(k=='prio'||k=='risiko')return bd(rc[v],v);
+if(k=='prog')return `<span class="pb"><i style="width:${+v}%"></i></span> ${+v}%`;
+const o=e=='findings'?open(r):e=='actions'?+r.prog<100:r.status!='Selesai';
+if(k=='sisa')return o?df(r.due,TD):'-';if(k=='fl')return o?fb(r.due):'-';
+if(k=='umur'){const x=e=='findings'?r:S.findings.find(z=>z.id==r.fid);return x?df(x.tutup||TD,x.tgl):'-'}
+if(f[2]=='date')return fd(v);if(k=='id')return `<b>${esc(v)}</b>`;
+return `<div class="tx" title="${esc(v)}">${esc(v)}</div>`}
+const tbl=(e,rows,cols)=>`<div class="w"><table><tr>${cols.map(k=>`<th>${fdef(e,k)[1]}</th>`).join('')}<th class="np"></th></tr>`+(rows.length?rows.map(r=>`<tr>${cols.map(k=>`<td>${cell(e,r,k)}</td>`).join('')}<td class="np"><button data-e="${e}|${r.id}">Ubah</button></td></tr>`).join(''):`<tr><td colspan="${cols.length+1}" class="mu">Belum ada data. Gunakan tombol Tambah.</td></tr>`)+`</table></div>`;
+const stack=(l,items)=>{const n=items.reduce((s,x)=>s+x[1],0);return `<div class="sr"><span>${l}</span><div class="sb">${items.map(([k,c])=>c?`<i style="flex:${c};background:${col[k]}" title="${k}: ${c}">${c}</i>`:'').join('')}</div><b>${n}</b></div>`},
+leg=ks=>`<div class="lg">${ks.map(k=>`<span><s style="background:${col[k]}"></s>${k}</span>`).join('')}</div>`,
+arows=l=>`<div class="w"><table><tr><th>Jenis</th><th>ID</th><th>Uraian</th><th>Penanggung jawab</th><th>Tenggat</th><th>Penanda</th></tr>${l.length?l.map(x=>`<tr><td>${x.k}</td><td><b>${x.id}</b></td><td><div class="tx">${esc(x.x)}</div></td><td>${esc(x.w)}</td><td>${fd(x.due)}</td><td>${fb(x.due)}</td></tr>`).join(''):'<tr><td colspan="6" class="mu">Tidak ada.</td></tr>'}</table></div>`;
+function ov(){const S=V(),T=S.tasks,A=S.actions,F=S.findings,late=T.filter(t=>eff(t)=='Terlambat').length,op=F.filter(open).length,pct=A.length?Math.round(A.filter(a=>+a.prog>=100).length/A.length*100):0,
+k=[['Total tugas',T.length],['Tugas selesai',T.filter(t=>t.status=='Selesai').length,'g'],['Tugas terlambat',late,late?'r':'g'],['Total temuan',F.length],['Temuan terbuka',op,op?'y':'g'],['Tindak lanjut selesai',pct+'%','g']],
+ks=['Selesai','Proses','Belum','Terlambat'],at=al().filter(x=>x.d<=3).slice(0,8);
+return `<div class="gr">${k.map(([l,v,c])=>`<div class="cd k ${c||''}"><small>${l}</small><b>${v}</b></div>`).join('')}</div>
+<div class="g2"><div class="cd"><h3>Progres tugas per periode</h3>${FR.map(f=>stack(f,ks.map(s=>[s,T.filter(t=>t.frek==f&&eff(t)==s).length]))).join('')}${leg(ks)}</div>
+<div class="cd"><h3>Temuan menurut risiko dan status</h3>${PR.map(r=>stack(r,FS.map(s=>[s,F.filter(x=>x.risiko==r&&x.status==s).length]))).join('')}${leg(FS)}</div></div>
+<h2>Perlu perhatian hari ini</h2><div class="cd"><ul class="l">${at.length?at.map(x=>`<li>${bd('n',x.k)}<b>${x.id}</b><span style="flex:1;min-width:160px">${esc(x.x)}</span>${fb(x.due)}</li>`).join(''):'<li class="mu">Tidak ada yang mendesak.</li>'}</ul></div>`}
+function tg(){const S=V();return `<div class="bar">${['Semua',...FR].map(f=>`<button class="${f==ft?'on':''}" data-f="${f}">${f}</button>`).join('')}<button class="p" data-add="tasks" style="margin-left:auto">+ Tambah tugas</button></div>`+tbl('tasks',S.tasks.filter(t=>ft=='Semua'||t.frek==ft),['id','nama','kat','pic','frek','mulai','due','status','fl','prio','cat','bukti'])+`<p class="mu">Tugas berulang yang sudah Selesai akan kembali menjadi Belum dengan tenggat periode berikutnya secara otomatis.</p>`}
+function tm(){const S=V();return `<div class="bar"><button class="p" data-add="findings" style="margin-left:auto">+ Tambah temuan</button></div>`+tbl('findings',S.findings,['id','tgl','unit','uraian','risiko','auditee','due','umur','sisa','fl','status'])+`<p class="mu">Ubah temuan untuk melihat kriteria, penyebab, dampak, dan rekomendasi. Status otomatis menyesuaikan progres tindak lanjut.</p>`}
+function tl(){const S=V(),lg_=[...S.logs].filter(l=>S.actions.some(a=>a.id==l.a)).reverse().slice(0,12);return `<div class="bar"><button class="p" data-add="actions" style="margin-left:auto">+ Tambah langkah tindak lanjut</button></div>`+tbl('actions',[...S.actions].sort((a,b)=>a.fid>b.fid?1:-1),['id','fid','rencana','pic','kirim','due','prog','st','sisa','fl','umur','selesai','bukti','verif'])+`<h2>Riwayat pembaruan</h2><div class="cd"><ul class="l">${lg_.map(l=>`<li><span class="mu">${fd(l.t.slice(0,10))} ${l.t.slice(11)}</span><b>${l.a}</b>${esc(l.x)}</li>`).join('')||'<li class="mu">Belum ada riwayat.</li>'}</ul></div>`}
+function pg(){const S=V(),l=al(),es=S.findings.filter(f=>open(f)&&f.risiko=='Tinggi').map(f=>{const a=S.actions.filter(x=>x.fid==f.id),w=[];if(!a.length)w.push('belum ada rencana tindak lanjut');else if(Math.max(...a.map(x=>+x.prog))==0)w.push('belum ada progres');if(f.due<TD)w.push('melewati tenggat '+(-df(f.due,TD))+' hari');return{f,w}}).filter(x=>x.w.length);
+return `<div class="lg" style="margin:0 0 10px">${bd('g','Hijau: sesuai jadwal')} ${bd('y','Kuning: tenggat ≤ 3 hari')} ${bd('r','Merah: terlambat')}</div>
+<h2>Eskalasi: temuan berisiko tinggi</h2><div class="w"><table><tr><th>ID</th><th>Uraian</th><th>Unit</th><th>Auditee</th><th>Umur (hari)</th><th>Alasan eskalasi</th></tr>${es.map(({f,w})=>`<tr><td><b>${f.id}</b></td><td><div class="tx">${esc(f.uraian)}</div></td><td>${f.unit}</td><td>${esc(f.auditee)}</td><td>${df(TD,f.tgl)}</td><td>${bd('r',w.join('; '))}</td></tr>`).join('')||'<tr><td colspan="6" class="mu">Tidak ada.</td></tr>'}</table></div>
+<h2>Terlambat</h2>${arows(l.filter(x=>x.d<0))}<h2>Mendekati tenggat (≤ 3 hari)</h2>${arows(l.filter(x=>x.d>=0&&x.d<=3))}<h2>Sesuai jadwal</h2>${arows(l.filter(x=>x.d>3))}`}
+function lp(){const S=V(),[y,m]=mo.split('-').map(Number),md=mo==TD.slice(0,7)?+TD.slice(8):new Date(y,m,0).getDate(),
+r1=FR.map(f=>{const n=S.tasks.filter(t=>t.frek==f).length,pl=n*(f=='Harian'?md:f=='Mingguan'?Math.ceil(md/7):1),dn=S.hist.filter(h=>h.f==f&&h.d.startsWith(mo)).length,p=pl?Math.min(100,Math.round(dn/pl*100)):0;return `<tr><td>${f}</td><td>${n}</td><td>${pl}</td><td>${dn}</td><td><span class="pb"><i style="width:${p}%"></i></span> ${p}%</td></tr>`}).join(''),
+r2=K.map(u=>{const fs=S.findings.filter(f=>f.unit==u),ac=S.actions.filter(a=>fs.some(f=>f.id==a.fid)),av=ac.length?Math.round(ac.reduce((s,a)=>s+ +a.prog,0)/ac.length):0;return `<tr><td>${u}</td><td>${fs.length}</td><td>${ac.length}</td><td>${ac.filter(a=>+a.prog>=100).length}</td><td>${ac.filter(a=>aSt(a)=='Terlambat').length}</td><td><span class="pb"><i style="width:${av}%"></i></span> ${av}%</td></tr>`}).join('');
+return `<div class="bar np"><label>Periode <input type="month" value="${mo}" data-mo="1"></label><span style="margin-left:auto"></span><button data-xl="1">Ekspor Excel</button><button class="p" data-pr="1">Cetak / simpan PDF</button></div>
+<div class="po"><h1>Laporan Rekap Bulanan Audit Internal</h1><p>PT. Borneo Group Indonesia · Disusun oleh ${au||'Tim Audit Internal'} · Dicetak ${fd(TD)}</p></div>
+<h2>Rekap ${BL[m-1]} ${y}</h2><div class="gr"><div class="cd k"><small>Temuan baru</small><b>${S.findings.filter(f=>f.tgl.startsWith(mo)).length}</b></div><div class="cd k g"><small>Temuan selesai/ditutup</small><b>${S.findings.filter(f=>(f.tutup||'').startsWith(mo)).length}</b></div><div class="cd k y"><small>Temuan masih terbuka</small><b>${S.findings.filter(open).length}</b></div></div>
+<h2>Tugas selesai terhadap rencana</h2><div class="w"><table><tr><th>Frekuensi</th><th>Jumlah tugas</th><th>Rencana</th><th>Selesai</th><th>Capaian</th></tr>${r1}</table></div>
+<h2>Penyelesaian tindak lanjut per unit</h2><div class="w"><table><tr><th>Unit</th><th>Temuan</th><th>Langkah</th><th>Selesai</th><th>Terlambat</th><th>Rata-rata progres</th></tr>${r2}</table></div>`}
+function kl(){const S=V(),[y,m]=cm.split('-').map(Number),n=new Date(y,m,0).getDate(),s=new Date(y,m-1,1).getDay(),L=[],p=(d,c,x)=>{if(d&&d.startsWith(cm))L.push({d,c,x})};
+S.tasks.forEach(t=>p(t.due,t.status=='Selesai'?'g':eff(t)=='Terlambat'?'r':'i',t.id+' '+t.nama));S.actions.forEach(a=>p(a.due,+a.prog>=100?'g':a.due<TD?'r':'y',a.id+' '+a.rencana));S.findings.forEach(f=>open(f)&&p(f.due,f.due<TD?'r':'y',f.id+' tenggat temuan'));
+L.sort((a,b)=>a.d>b.d?1:-1);
+let g=['Min','Sen','Sel','Rab','Kam','Jum','Sab'].map(x=>`<div class="hd">${x}</div>`).join('')+'<div class="e"></div>'.repeat(s);
+for(let i=1;i<=n;i++){const d=cm+'-'+String(i).padStart(2,'0');g+=`<div class="${d==TD?'td':''}"><b>${i}</b>${L.filter(x=>x.d==d).map(x=>`<span class="b ${x.c} ch" title="${esc(x.x)}">${esc(x.x)}</span>`).join('')}</div>`}
+return `<div class="bar"><button data-cm="-1">‹ Sebelumnya</button><b style="min-width:130px;text-align:center">${BL[m-1]} ${y}</b><button data-cm="1">Berikutnya ›</button><button data-cm="0">Bulan ini</button></div><div class="cal">${g}</div><div class="lg"><span class="b g">Selesai</span><span class="b i">Tugas</span><span class="b y">Tindak lanjut/temuan</span><span class="b r">Terlambat</span></div><h2>Agenda bulan ini</h2><div class="cd"><ul class="l">${L.map(x=>`<li><b>${fd(x.d)}</b><span class="b ${x.c}">${x.c=='g'?'Selesai':x.c=='r'?'Terlambat':'Aktif'}</span>${esc(x.x)}</li>`).join('')||'<li class="mu">Tidak ada agenda.</li>'}</ul></div>`}
+function ti(){const l=S.team.map(a=>{const o=au;au=a.n;const x=al().filter(z=>z.d<=3);au=o;const lt=x.filter(z=>z.d<0),sn=x.filter(z=>z.d>=0),ln=z=>`- ${z.id} ${z.x.slice(0,70)} (tenggat ${fd(z.due)})`,
+m=`*Pengingat Audit Internal – ${a.n}*\n${fd(TD)}\n\n*Terlambat (${lt.length})*\n${lt.map(ln).join('\n')||'-'}\n\n*Jatuh tempo ≤ 3 hari (${sn.length})*\n${sn.map(ln).join('\n')||'-'}`,w=String(a.wa||'').replace(/\D/g,'');
+return `<li><b>${esc(a.n)}</b>${bd(lt.length?'r':'g',lt.length+' terlambat')}${bd(sn.length?'y':'g',sn.length+' mendekati tenggat')}`+(w?`<a href="https://wa.me/${w}?text=${encodeURIComponent(m)}" target="_blank" rel="noopener">Kirim ringkasan ke WhatsApp</a>`:'<span class="mu">Isi nomor WhatsApp terlebih dahulu</span>')+'</li>'}).join('');
+return `<div class="bar"><button class="p" data-add="team" style="margin-left:auto">+ Tambah auditor</button></div>`+tbl('team',S.team,['id','n','wa','on','beban'])+`<h2>Pengingat WhatsApp</h2><div class="cd"><ul class="l">${l}</ul></div><p class="mu">Tombol membuka WhatsApp dengan pesan siap kirim. Pengiriman otomatis setiap pagi aktif setelah Kode.gs dipasang (lihat Panduan). Pengingat ke penanggung jawab tindak lanjut ada di kolom “Pengingat” pada halaman Tindak Lanjut.</p>`}
+async function saveF(n,b){const D=window.claude&&await claude.use('downloads');if(D)return D.save({filename:n,data:b});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=n;a.click()}
+function xl(){if(!window.XLSX)return sm('Pustaka Excel belum termuat');const W=XLSX.utils,T=V(),b=W.book_new(),rw=e=>T[e].map(r=>Object.fromEntries(SC[e].f.map(([k,l])=>[l,r[k]])));
+[['tasks','Tugas'],['findings','Temuan'],['actions','Tindak Lanjut'],['team','Tim']].forEach(([e,n])=>W.book_append_sheet(b,W.json_to_sheet(rw(e)),n));W.book_append_sheet(b,W.json_to_sheet(T.logs.map(l=>({Waktu:l.t,'ID tindak lanjut':l.a,Perubahan:l.x}))),'Riwayat');
+saveF('Audit-Borneo-'+TD+'.xlsx',new Blob([XLSX.write(b,{bookType:'xlsx',type:'array'})],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'}))}
+async function upl(f){if(GS)return new Promise((ok,no)=>{const r=new FileReader;r.onload=()=>GS.withSuccessHandler(ok).withFailureHandler(no).uploadBukti(f.name,f.type,r.result.split(',')[1]);r.readAsDataURL(f)});const A=window.claude&&await claude.use('assets');if(!A)throw'x';return (await A.upload(f)).url}
+async function up(t){const i=t.closest('label').querySelector('[name=bukti]');i.value='Mengunggah…';try{i.value=await upl(t.files[0])}catch(e){i.value='';sm('Unggah berkas tidak tersedia/gagal')}}
+const pd=()=>`<div class="cd doc"><h2 style="margin-top:0">Struktur dashboard</h2><ul><li><b>Ringkasan</b>: kartu angka, grafik, dan daftar yang perlu perhatian hari ini.</li><li><b>Tugas Rutin</b>: input tugas harian, mingguan, bulanan.</li><li><b>Temuan</b>: register temuan audit.</li><li><b>Tindak Lanjut</b>: langkah perbaikan per temuan, progres, verifikasi, dan riwayat.</li><li><b>Peringatan</b>: penanda warna dan eskalasi risiko tinggi.</li><li><b>Laporan</b>: rekap bulanan siap cetak atau ekspor Excel.</li><li><b>Kalender</b>: tenggat tugas, tindak lanjut, dan temuan per tanggal.</li><li><b>Tim &amp; WhatsApp</b>: daftar auditor, nomor WhatsApp, dan pengingat.</li></ul>
+<p class="mu">Area input ada pada tombol Tambah/Ubah (formulir); area tampilan ada pada Ringkasan, Peringatan, dan Laporan. Status, umur, sisa hari, penanda, dan persentase dihitung otomatis.</p>
+<h2>Cara penggunaan</h2><ul><li><b>Harian/Mingguan/Bulanan</b>: buka Tugas Rutin, pilih tab, ubah status melalui dropdown. Setelah Selesai, tugas kembali Belum saat periodenya berganti.</li><li><b>Temuan baru</b>: Temuan → Tambah temuan, lengkapi uraian, kriteria, penyebab, dampak, risiko, rekomendasi.</li><li><b>Tindak lanjut</b>: Tindak Lanjut → Tambah, pilih ID temuan. Satu temuan boleh punya banyak langkah.</li><li><b>Perbarui progres</b>: klik Ubah, isi Progres (%) dan bukti. Perubahan tercatat di riwayat. Progres 100% mengubah temuan menjadi Menunggu Verifikasi; isi hasil verifikasi “Sesuai” agar otomatis Selesai.</li><li><b>Penutupan</b>: ubah status temuan menjadi Ditutup secara manual setelah Anda yakin.</li><li><b>Laporan</b>: pilih periode, lalu Ekspor Excel atau Cetak/simpan PDF.</li><li><b>Per auditor</b>: tambah auditor di Tim &amp; WhatsApp, lalu pilih nama di pojok kanan atas; seluruh halaman menyesuaikan.</li><li><b>Bukti</b>: di formulir tugas atau tindak lanjut, pilih berkas di bawah kolom bukti; berkas diunggah ke penyimpanan awan dan tautannya tersimpan otomatis.</li><li><b>WhatsApp</b>: kolom Pengingat pada Tindak Lanjut membuka pesan siap kirim ke penanggung jawab (isi dulu nomor WhatsApp PIC).</li></ul>
+<p class="mu">Data tersimpan di peramban perangkat ini. Data contoh bisa dihapus dengan tombol di bawah.</p><button id="rs" data-rs="1">Kembalikan data contoh</button>
+<h2>Menghubungkan ke Google Sheets (pasang sekali)</h2><ol><li>Buat Google Sheet baru, lalu buka Ekstensi → Apps Script.</li><li>Tempel isi <b>Kode.gs</b> ke berkas Kode.gs, tambah berkas HTML bernama <b>Index</b>, lalu tempel isi Index.html.</li><li>Jalankan fungsi <b>setup</b> dan setujui izin; tab basis data dan tab Pengaturan akan terbentuk.</li><li>Di tab Pengaturan, isi token Fonnte (fonnte.com) dan surel penerima laporan.</li><li>Terapkan → Deployment baru → Aplikasi web (jalankan sebagai Saya, akses hanya saya), lalu buka tautannya.</li><li>Jalankan fungsi <b>pasangPemicu</b> sekali: pengingat WhatsApp harian dan ekspor Excel/PDF otomatis tiap tanggal 1 aktif.</li></ol><p class="mu">Bila dibuka dari tautan Apps Script, data tersimpan di Google Sheets dan bukti di Google Drive. Bila dibuka dari halaman lain, data hanya tersimpan di peramban.</p></div>`;
+function render(){$('#au').innerHTML='<option value="">Semua auditor</option>'+S.team.map(a=>`<option ${a.n==au?'selected':''}>${esc(a.n)}</option>`).join('');$('#nav').innerHTML=[['ov','Ringkasan'],['tg','Tugas Rutin'],['tm','Temuan'],['tl','Tindak Lanjut'],['kl','Kalender'],['pg','Peringatan'],['lp','Laporan'],['ti','Tim & WhatsApp'],['pd','Panduan']].map(([k,l])=>`<button class="${k==tab?'on':''}" data-t="${k}">${l}</button>`).join('');$('#m').innerHTML=({ov,tg,tm,tl,kl,pg,lp,ti,pd})[tab]()}
+function form(e,id){const s=SC[e],r=id?S[e].find(x=>x.id==id):{id:nid(e),mulai:TD,due:TD,tgl:TD,prog:0,pic:e=='tasks'?(au||S.team[0].n):'',aud:au||S.team[0].n};cur={e,id};$('#dg h2').textContent=(id?'Ubah ':'Tambah ')+s.n;$('#del').style.display=id?'':'none';$('#del').textContent='Hapus';delete $('#del').dataset.c;
+$('#ff').innerHTML=s.f.map(([k,l,t,o])=>{const v=r[k]??'';let i;if(t=='s')i=`<select name="${k}">${(typeof o=='function'?o():o).map(x=>`<option ${x==v?'selected':''}>${esc(x)}</option>`).join('')}</select>`;else if(t=='a')i=`<textarea name="${k}" rows="2">${esc(v)}</textarea>`;else i=`<input name="${k}" type="${t=='num'?'number':t||'text'}" ${t=='num'?'min="0" max="100"':''} value="${esc(v)}" ${k=='id'?'readonly':''}>`;return `<label class="${t=='a'?'w2':''}">${l}${i}${k=='bukti'?'<input type="file" data-up="1">':''}</label>`}).join('');$('#dg').showModal()}
+$('#fm').onsubmit=ev=>{const {e,id}=cur,o=Object.fromEntries(new FormData($('#fm')));let r=id?S[e].find(x=>x.id==id):null;const old=r?{...r}:null;if(!r){r={};S[e].push(r)}Object.assign(r,o);
+if(e=='tasks')ts(r,old);if(e=='findings')fc(r);if(e=='team'&&old&&old.n!=r.n){S.tasks.forEach(t=>t.pic==old.n&&(t.pic=r.n));S.findings.forEach(f=>f.aud==old.n&&(f.aud=r.n));if(au==old.n)au=r.n}
+if(e=='actions'){r.prog=Math.max(0,Math.min(100,+r.prog||0));r.selesai=r.prog==100?(r.selesai||TD):'';lg(r.id,old?(old.prog!=r.prog?`Progres ${old.prog}% → ${r.prog}%`:'Data diperbarui'):'Langkah tindak lanjut dibuat');sy(r.fid)}
+sv();render()};
+document.addEventListener('click',ev=>{const b=ev.target.closest('button');if(!b)return;const d=b.dataset;
+if(d.t){tab=d.t;render()}else if(d.f){ft=d.f;render()}else if(d.add)form(d.add);else if(d.e){const[x,i]=d.e.split('|');form(x,i)}else if(d.pr)print();else if(d.xl)xl();else if(d.cm!==undefined){cm=d.cm=='0'?TD.slice(0,7):addM(cm+'-01',+d.cm).slice(0,7);render()}
+else if(d.x)$('#dg').close();else if(d.del){if(!d.c){d.c=1;b.textContent='Yakin hapus?';return}S[cur.e]=S[cur.e].filter(x=>x.id!=cur.id);sv();$('#dg').close();render()}
+else if(d.rs){if(!d.c){d.c=1;b.textContent='Klik lagi untuk mengonfirmasi';return}S=seed();sv();render()}});
+document.addEventListener('change',ev=>{const t=ev.target;if(t.dataset.s){const[x,i,k]=t.dataset.s.split('|'),r=S[x].find(z=>z.id==i),o={...r};r[k]=t.value;if(x=='tasks')ts(r,o);else fc(r);sv();render()}if(t.dataset.mo&&t.value){mo=t.value;render()}if(t.dataset.up&&t.files[0])up(t);if(t.id=='au'){au=t.value;render()}});
+if(GS){$('#m').innerHTML='<p class="mu">Memuat data dari Google Sheets…</p>';GS.withSuccessHandler(d=>{S=d;ready();render()}).withFailureHandler(()=>{S=null;ready();render();sm('Gagal memuat dari Sheets')}).apiLoad()}else render();
+</script></body></html>
